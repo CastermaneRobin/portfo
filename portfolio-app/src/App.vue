@@ -5,7 +5,6 @@
     <router-link to="/project">Mes Projets</router-link> |
     <router-link to="/portfolio">Portfolio</router-link> |
     <router-link to="/contact">Contact</router-link> 
-
   </div>
   <router-view/>
 </template>
