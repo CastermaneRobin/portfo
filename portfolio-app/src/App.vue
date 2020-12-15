@@ -1,33 +1,42 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Accueil</router-link> |
-    <router-link to="/profil">Profile</router-link> |
-    <router-link to="/project">Mes Projets</router-link> |
-    <router-link to="/portfolio">Portfolio</router-link> |
-    <router-link to="/contact">Contact</router-link> 
-  </div>
-  <router-view/>
+  <the-navigation></the-navigation>
+  <main>
+    <router-view></router-view>
+  </main>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import TheNavigation from './components/nav/TheNavigation.vue';
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+export default {
+  components: {
+    TheNavigation
+  },
+  data() {
+    return {
+      
+    };
+  },
+  methods:{
+    scrollFunction(){
+      console.log('scorll')
     }
   }
+};
+</script>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0px;
+  width: 100%;
 }
 </style>
