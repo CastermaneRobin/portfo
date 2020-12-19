@@ -1,7 +1,7 @@
 <template>
   <the-navigation></the-navigation>
   <main>
-    <router-view></router-view>
+    <router-view v-on:change="onchange()"></router-view>
   </main>
 </template>
 
@@ -21,7 +21,8 @@ export default {
     scrollFunction(){
       console.log('scorll')
     }
-  }
+  },
+  
 };
 </script>
 

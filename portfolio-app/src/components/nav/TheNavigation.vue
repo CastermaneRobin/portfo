@@ -1,13 +1,12 @@
 <template>
-  <header>
+  <header v-bind:class="{ portfolio : headerIsActive }">
     <nav v-bind:class="{ scroll: scrolled }">
 
-      <div class="hamburger">
+      <div class="hamburger" v-bind:class="{ headerBurger : headerIsActive }">
          <img @click="displayBurger" src="../../image/listIcon2.jpg"/>
       </div>
       
       <div class='symbole'>
-         Robin Castermane   
       </div>
 
       <div class="menu">
@@ -23,10 +22,18 @@
           </li>
         </ul>
       </div>
-
       
     </nav>
+    
+    <div v-bind:class="{ hiddenClass : headerIsActive }">
+    <div class="centered">Je suis Robin Castermane.</div>
+      <div class="bottom"><p>Je suis passionné de développement web, web/mobiles « responsive » et de développement applicatif.</p></div>
+    </div>
+
   </header>
+
+  
+
 </template>
 
 <script>
@@ -35,37 +42,89 @@ data(){
   return{
     scrolled: false,
     toggleBurger: false,
+    headerIsActive: true,
   }
 },
 methods: {
   handleScroll () {
-    this.scrolled = window.scrollY > 500;
+    this.scrolled = window.scrollY > 200;
   },
-  displayBurger(){
+  displayBurger () {
     this.toggleBurger = !this.toggleBurger
+  },
+  handleHeader () {
+    this.toggleHeader === true
   }
 },
 created () {
   window.addEventListener('scroll', this.handleScroll);
+  //console.log(this.$route)
 },
 unmounted () {
   window.removeEventListener('scroll', this.handleScroll);
-}
+},
+watch: {
+    $route(){
+      if(this.$route.path === '/portfolio'){
+        this.headerIsActive = true
+      }else if(this.$route.path === '/contact'){
+        this.headerIsActive = true
+      }else if(this.$route.path === '/'){
+        this.headerIsActive = false
+      }
+      //window.addEventListener('portfolio', this.handleHeader);
+    }
+  },
 }
 </script>
 
 <style scoped>
-
 header {
   font-family: Georgia, serif;
   width: 100%;
-  height: 80vh;
-  background: url('../../image/headerImage2.jpg') no-repeat 50% 50%;
+
+  height: 100vh;
+  /*height: 77px;*/
+  background: url('../../image/header-background.jpg') no-repeat 50% 50%;
   background-size: cover;
+}
+header.portfolio{
+  font-family: Georgia, serif;
+  width: 100%;
+  height: 77px;
+  background-size: cover;
+  /*background: #333;*/
+}
+div.hiddenClass{
+  display: none;
+}
+.centered {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  text-align: center;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  font-size: 62px;
+  color: #fff;
+  z-index: 2;
+
+}
+.bottom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  color: grey;
+  text-align: center;
+  z-index: 2;
 }
 nav {
   position: fixed;
   width: 100%;
+    z-index: 3;
+
 }
 nav ul {
   padding: 0;
@@ -76,7 +135,7 @@ nav ul {
 }
 nav ul li {
   display: inline-block;
-  padding: 26px;
+  padding: 24px;
 }
 nav ul li a{
   text-decoration: none;
@@ -92,7 +151,7 @@ nav ul li a{
   font-size: 26px;
 }
 nav.scroll ul {
-  background: #00223E;
+  background: #333333;
   box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
 }
 img {
@@ -100,7 +159,7 @@ img {
 }
 .hamburger{
   display: none;
-  background: #000;
+  
   width: 100%;
   box-sizing: border-box;
   cursor: pointer;
@@ -108,9 +167,14 @@ img {
   
 }
 
-@media(max-width: 580px){
+@media(max-width: 650px){
   .hamburger{
     display: block;
+    height: 57px;
+    
+  }
+  .headerBurger{
+    background: #333333;
   }
   .symbole{
     position: fixed;
@@ -120,7 +184,7 @@ img {
   }
   nav ul {
     max-height: 0px;
-    background: #000;
+    background: #333333;
   }
   .menu{
     max-height: 20em;
@@ -130,17 +194,69 @@ img {
       width: 100%;
       padding: 20px 0;
     }
+  header.portfolio{
+    font-family: Georgia, serif;
+    width: 100%;
+    height: 57px;
+    background-size: cover;
 }
-@media(min-width: 580px){
+}
+@media(max-width: 1330px){
+  .centered{
+    font-size: 50px;
+  }
+  .bottom{
+    font-size: 27px;
+  }
+}
+@media(max-width: 1090px){
+  .centered{
+    font-size: 40px;
+  }
+  .bottom{
+    font-size: 24px;
+  }
+}
+@media(max-width: 860px){
+  .centered{
+    font-size: 30px;
+  }
+  .bottom{
+    font-size: 18px;
+    top: 45%;
+  }
+}
+@media(max-width: 520px){
+  .centered{
+    font-size: 30px;
+  }
+  .bottom{
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+  }
+}
+@media(max-width: 360px){
+  .centered{
+    font-size: 24px;
+  }
+  .bottom{
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+  }
+}
+@media(min-width: 650px){
 a.router-link-active::after{
   content:'';
   display: block;
   width: 100%;
   height: 3px;
-  background: #fff;
+  background: #fff;/*ff4400*/
   transform: scale(1);
 }
-
 a::after{
   content:'';
   display: block;
