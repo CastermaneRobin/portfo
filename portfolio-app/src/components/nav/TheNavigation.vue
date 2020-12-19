@@ -1,12 +1,13 @@
 <template>
   <header v-bind:class="{ portfolio : headerIsActive }">
-    <nav v-bind:class="{ scroll: scrolled }">
+    <nav v-bind:class="{ scroll: scrolled, portfolio : headerIsActive }">
 
       <div class="hamburger" v-bind:class="{ headerBurger : headerIsActive }">
          <img @click="displayBurger" src="../../image/listIcon2.jpg"/>
       </div>
       
       <div class='symbole'>
+        Robin Castermane
       </div>
 
       <div class="menu">
@@ -49,6 +50,9 @@ methods: {
   handleScroll () {
     this.scrolled = window.scrollY > 200;
   },
+  handleScrollB () {
+    this.scrolled = window.scrollY > 0;
+  },
   displayBurger () {
     this.toggleBurger = !this.toggleBurger
   },
@@ -58,6 +62,7 @@ methods: {
 },
 created () {
   window.addEventListener('scroll', this.handleScroll);
+  
   //console.log(this.$route)
 },
 unmounted () {
@@ -72,7 +77,7 @@ watch: {
       }else if(this.$route.path === '/'){
         this.headerIsActive = false
       }
-      //window.addEventListener('portfolio', this.handleHeader);
+      //window.addEventListener('portfolio', this.handleScrollB);
     }
   },
 }
@@ -93,7 +98,12 @@ header.portfolio{
   width: 100%;
   height: 77px;
   background-size: cover;
+  background: #333333;
   /*background: #333;*/
+}
+nav.portfolio{
+    position: fixed;
+
 }
 div.hiddenClass{
   display: none;
@@ -123,7 +133,7 @@ div.hiddenClass{
 nav {
   position: fixed;
   width: 100%;
-    z-index: 3;
+  z-index: 3;
 
 }
 nav ul {
@@ -153,6 +163,7 @@ nav ul li a{
 nav.scroll ul {
   background: #333333;
   box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+  /*height: 77px;*/
 }
 img {
   width: 60px;
@@ -197,7 +208,7 @@ img {
   header.portfolio{
     font-family: Georgia, serif;
     width: 100%;
-    height: 57px;
+    /*height: 57px;*/
     background-size: cover;
 }
 }
