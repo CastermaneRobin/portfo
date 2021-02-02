@@ -2,7 +2,7 @@
   <header v-bind:class="{ portfolio : headerIsActive }">
     <nav v-bind:class="{ scroll: scrolled, portfolio : headerIsActive }">
 
-      <div class="hamburger" v-bind:class="{ headerBurger : headerIsActive }">
+      <div class="hamburger" v-bind:class="{ headerBurger : headerIsActive, scroll: scrolled }">
          <img @click="displayBurger" src="../../image/listIcon2.jpg"/>
       </div>
       
@@ -90,7 +90,7 @@ header {
 
   height: 100vh;
   /*height: 77px;*/
-  background: url('../../image/header-background.jpg') no-repeat 50% 50%;
+  background: url('../../image/headerImage2.jpg') no-repeat 50% 50%;
   background-size: cover;
 }
 header.portfolio{
@@ -98,8 +98,10 @@ header.portfolio{
   width: 100%;
   height: 77px;
   background-size: cover;
-  background: #333333;
+  background: #040127;
   /*background: #333;*/
+  position: fixed;
+  z-index: 3;
 }
 nav.portfolio{
     position: fixed;
@@ -126,7 +128,7 @@ div.hiddenClass{
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 32px;
-  color: grey;
+  color: #f2f2f2;
   text-align: center;
   z-index: 2;
 }
@@ -161,9 +163,9 @@ nav ul li a{
   font-size: 26px;
 }
 nav.scroll ul {
-  background: #333333;
+  background: #040127;
   box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
-  /*height: 77px;*/
+  height: 77px;
 }
 img {
   width: 60px;
@@ -185,7 +187,7 @@ img {
     
   }
   .headerBurger{
-    background: #333333;
+    background: #040127;
   }
   .symbole{
     position: fixed;
@@ -195,7 +197,7 @@ img {
   }
   nav ul {
     max-height: 0px;
-    background: #333333;
+    background: #040127;
   }
   .menu{
     max-height: 20em;
@@ -208,9 +210,17 @@ img {
   header.portfolio{
     font-family: Georgia, serif;
     width: 100%;
-    /*height: 57px;*/
     background-size: cover;
-}
+    background: #f2f2f2;
+    height: 57px;
+  }
+  div.scroll{
+font-family: Georgia, serif;
+    width: 100%;
+    background-size: cover;
+    background: #040127;
+    transition: 1s;
+  }
 }
 @media(max-width: 1330px){
   .centered{
@@ -280,6 +290,9 @@ a::after{
 }
 a:hover::after{
    transform: scale(1);
+}
+nav ul {
+  height: 77px;
 }
 }
 
