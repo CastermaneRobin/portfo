@@ -27,8 +27,8 @@
     </nav>
     
     <div v-bind:class="{ hiddenClass : headerIsActive }">
-    <div class="centered">Je suis Robin Castermane.</div>
-      <div class="bottom"><p>Je suis passionné de développement web, web/mobiles « responsive » et de développement applicatif.</p></div>
+    <div class="centered"><p class="title1">Je suis Robin Castermane.</p></div>
+      <div class="bottom"><p class="title2">Je suis passionné de développement web, web/mobiles « responsive » et de développement applicatif.</p></div>
     </div>
 
   </header>
@@ -121,6 +121,8 @@ div.hiddenClass{
   color: #fff;
   z-index: 2;
 
+  
+
 }
 .bottom {
   position: absolute;
@@ -132,10 +134,24 @@ div.hiddenClass{
   text-align: center;
   z-index: 2;
 }
+.title1{
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.8s 0.6s ease-out forwards;
+}
+.title2{
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.8s 1s ease-out forwards;
+}
 nav {
   position: fixed;
   width: 100%;
   z-index: 3;
+
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.4s 1.6s ease-out forwards;
 
 }
 nav ul {
@@ -221,6 +237,8 @@ font-family: Georgia, serif;
     background: #040127;
     transition: 1s;
   }
+  
+
 }
 @media(max-width: 1330px){
   .centered{
@@ -294,6 +312,12 @@ a:hover::after{
 nav ul {
   height: 77px;
 }
+}
+@keyframes apparition {
+  100%{
+    opacity: 1;
+    transform: none;
+  }
 }
 
 /*
