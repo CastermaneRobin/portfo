@@ -147,6 +147,10 @@ div.polaroid {
 div.container {
   padding: 10px;
 }
+div.container_table {
+  padding: 10px;
+  
+}
 .container_table{
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       max-width: 1400px;
@@ -231,7 +235,7 @@ h1.mainTitle {
     font-size: 62px;
 }
 tr.tableTitle {
-    background: #333;
+    background: #050027;
     color: #fff
 }
 td.totalText {
@@ -239,7 +243,7 @@ td.totalText {
     text-align: center;
 }
 td.total{
-    background: #333;
+    background: #050027;
     color: #fff;
     text-align: center;
     font-weight: bold;

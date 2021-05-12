@@ -1,5 +1,5 @@
 <template>
-    <section id='mainContainer'>
+    <!----section id='mainContainer'>
 
 
 <div class="row">
@@ -34,7 +34,10 @@
   </div>
 </div>
 
-    </section>
+    </section-->
+    <aboutme/>
+    
+
 </template>
 
 <style scoped>    
@@ -92,3 +95,12 @@
   }
 }
 </style>
+
+<script>
+import aboutme from './AboutMe'
+export default {
+  components: {
+    aboutme
+  }
+}
+</script>

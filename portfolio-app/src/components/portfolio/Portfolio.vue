@@ -70,7 +70,7 @@
         
         <div class="w3-container mainTable">
         <h3>Tableau des heures</h3>
-        <div class="w3-responsive container_table">
+        <div class="w3-responsive container">
             <table class="w3-table-all container">
             <tr class="tableTitle">
                 <th class='elementSujet'>Sujet</th>

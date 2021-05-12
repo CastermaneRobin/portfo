@@ -65,19 +65,22 @@ created () {
   
   //console.log(this.$route)
 },
+
 unmounted () {
   window.removeEventListener('scroll', this.handleScroll);
+  
 },
 watch: {
     $route(){
+      window.scrollTo(0, 0);
       if(this.$route.path === '/portfolio'){
         this.headerIsActive = true
       }else if(this.$route.path === '/contact'){
         this.headerIsActive = true
       }else if(this.$route.path === '/'){
         this.headerIsActive = false
+        
       }
-      //window.addEventListener('portfolio', this.handleScrollB);
     }
   },
 }
