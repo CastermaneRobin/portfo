@@ -1,42 +1,81 @@
 <template>
     <section>
             <h1 class='mainTitle'>Mon Portfolio</h1>
-            <h2>Voici tous mes travaux réalisés pendant mon cursus à l'Ephec qui m'ont permis d'acquérir des expériences professionnelles supplémentaires</h2>
+            <h2 class="subtitle">Voici tous mes travaux réalisés pendant mon cursus à l'Ephec qui m'ont permis d'acquérir des expériences professionnelles supplémentaires</h2>
         <div class="row">
             <div class="column">
                 
                 <div class="polaroid container_img">
-                    <img src="../../image/GithubForm.png" alt="Norway" style="width:100%" class="image">
-                    <div class="middle">
-                        <div class="text">Formation GitHub</div>
-                    </div>
+                    <a style="text-decoration:none">
+                        <img src="../../image/nodeJs.jpg" alt="Norway" style="width:100%" class="image">
+                        <div class="middle">
 
-                    <div class="container">
-                        <p>Formation GitHub</p>
-                    </div>
-                </div> 
+                            <div id="app">
+                                <button class="button" @click="showModal = true">
+                                Show Modal
+                                </button>
+                                <transition name="fade" appear>
+                                    <div class="modal-overlay" v-if="showModal" @click="showModal = false"></div>
+                                </transition>
+                                <transition name="slide" appear>
+                                    <div class="modal" v-if="showModal">
+                                        <h1 class="title_modal">Lorem Ipsum</h1>
+                                        <p class="subtitle_modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem provident explicabo accusamus laudantium voluptatum nobis sed nesciunt neque possimus molestiae?</p>
+                                        <button class="button" @click="showModal = false">
+                                        Close Modal
+                                        </button>
+                                    </div>
+                                </transition>
+                            </div>
 
-                <div class="polaroid container_img">
-                    <img src="../../image/tutoratEphec2.png" alt="Norway" style="width:100%" class="image">
-                    <div class="middle">
-                        <div class="text">Tutorat Ephec</div>
-                    </div>
-                    <div class="container">
-                        <p>Tutorat Ephec</p>
-                    </div>
+                        </div>
+                        <a class="container">
+                            <p>Formation OpenClassrooms</p>
+                        </a>
+                    </a>
                 </div>
                 
-            
+                <div class="polaroid container_img">
+                    <a href="/portfolio/jef" style="text-decoration:none">
+                        <img src="../../image/jefJobDay.png" alt="Norway" style="width:100%" class="image">
+                        <div class="middle">
+                            <div class="text">Job day JEF</div>
+                        </div>
+                        <a class="container">
+                            <p>Visite d'entreprise</p>
+                        </a>
+                    </a>
+                </div> 
 
                 <div class="polaroid container_img">
-                    <img src="../../image/LinuxForm.png" alt="Norway" style="width:100%" class="image">
-                    <div class="middle">
-                        <div class="text">Formation Linux</div>
-                    </div>
-                    <div class="container">
-                        <p>Formation Linux</p>
-                    </div>
+                    <a style="text-decoration:none">
+                        <img src="../../image/GithubForm.png" alt="Norway" style="width:100%" class="image">
+                        <div class="middle">
+                            <div class="text">Formation GitHub</div>
+                        </div>
+
+                        <a class="container">
+                            <p>Formation à l'UCL</p>
+                        </a>
+                    </a>
                 </div> 
+
+                
+                <div class="polaroid container_img">
+                    <a href="/portfolio/devDay" style="text-decoration:none">
+                        <img src="../../image/DevDayy.png" alt="Norway" style="width:100%" class="image">
+                        <div class="middle">
+                            <div class="text">DevDay 2020</div>
+                        </div>
+                        <a class="container">
+                            <p>DevDay 2020</p>
+                        </a>
+                    </a>
+                </div> 
+            
+
+                 
+
 
                  
 
@@ -45,33 +84,55 @@
             <div class="column">
                
                 <div class="polaroid container_img">
-                    <img src="../../image/DevDayy.png" alt="Norway" style="width:100%" class="image">
-                    <div class="middle">
-                        <div class="text">DevDay 2020</div>
-                    </div>
-                    <div class="container">
-                        <p>DevDay 2020</p>
-                    </div>
+                    <a href="/portfolio/reactNative" style="text-decoration:none">
+                        <img src="../../image/reactNativeFormation.webp" alt="Norway" style="width:100%" class="image">
+                        <div class="middle">
+                            <div class="text">Formation React native</div>
+                        </div>
+                        <a class="container">
+                            <p>Formation OpenClassrooms</p>
+                        </a>
+                    </a>
                 </div> 
+
+               
+
                 <div class="polaroid container_img">
-                    <img src="../../image/tutoratEphec2.png" alt="Norway" style="width:100%" class="image">
-                    <div class="middle">
-                        <div class="text">Tutorat Ephec</div>
-                    </div>
-                    <div class="container">
-                        <p>Tutorat Ephec</p>
-                    </div>
-                </div> 
-                <div class="polaroid container_img">
-                    <img src="../../image/DevDayy.png" alt="Norway" style="width:100%" class="image">
-                    <div class="middle">
-                        <div class="text">DevDay 2020</div>
-                    </div>
-                    <div class="container">
-                        <p>DevDay 2020</p>
-                    </div>
+                    <a href="./AttestationTutorat.pdf" download style="text-decoration:none">
+                        <img src="../../image/tutoratEphec2.png" alt="Norway" style="width:100%" class="image">
+                        <div class="middle">
+                            <div class="text">Tutorat Ephec</div>
+                        </div>
+
+                        <a class="container">
+                            <p>Tutorat Ephec</p>
+                        </a>
+                    </a>
                 </div> 
                 
+                <div class="polaroid container_img">
+                    <a style="text-decoration:none">
+                        <img src="../../image/LinuxForm.png" alt="Norway" style="width:100%" class="image">
+                        <div class="middle">
+                            <div class="text">Formation Linux</div>
+                        </div>
+                        <a class="container">
+                            <p>Formation à l'UCL</p>
+                        </a>
+                    </a>
+                </div>
+                
+                <div class="polaroid container_img">
+                    <a style="text-decoration:none">
+                        <img src="../../image/LinuxForma2.jpg" alt="Norway" style="width:100%" class="image">
+                        <div class="middle">
+                            <div class="text">Formation Linux</div>
+                        </div>
+                        <a class="container">
+                            <p>Formation à l'UCL</p>
+                        </a>
+                    </a>
+                </div> 
                 
             </div>
         </div>
@@ -123,11 +184,17 @@
                 <td class='element'>10h</td>
                 <td class='element'>14h30</td>
             </tr>
+            <tr class="tableElement">
+                <td class='elementSujet'>Job day JEF</td>
+                <td class='elementSujet'>Visite d'entreprise</td>
+                <td class='element'>5h</td>
+                <td class='element'>5h</td>
+            </tr>
             <tr class="tableTotal">
                 <td></td>
                 <td class='totalText'>Total </td>
-                <td class='total'>45h</td>
-                <td class='totalText'> 71h30</td>
+                <td class='total'>50h</td>
+                <td class='totalText'> 76h30</td>
             </tr>
             </table>
         </div>
@@ -144,7 +211,7 @@ div.polaroid {
   margin-bottom: 30px;
 }
 
-div.container {
+a.container {
   padding: 10px;
 }
 div.container_table {
@@ -253,7 +320,7 @@ td.total{
 }
 
 tr.tableElement:hover {
-    background: #9c9c9c;
+    background: #ccc;
     transition: 1s;
 }
 
@@ -311,6 +378,7 @@ tr.tableElement:hover {
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
+  z-index: 1;
 }
 
 .middle {
@@ -330,4 +398,118 @@ tr.tableElement:hover {
 .container_img:hover .middle {
   opacity: 1;
 }
+h2.subtitle{
+    max-width: 900px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+#app {
+ position: relative;
+ 
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 
+ width: 100vw;
+ min-height: 10vh;
+ overflow-x: hidden;
+}
+
+.button {
+ appearance: none;
+ outline: none;
+ border: none;
+ background: none;
+ cursor: pointer;
+ 
+ display: inline-block;
+ padding: 15px 25px;
+ background-image: linear-gradient(to right, #CC2E5D, #FF5858);
+ border-radius: 8px;
+ 
+ color: #FFF;
+ font-size: 18px;
+ font-weight: 700;
+ 
+ box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+ transition: 0.4s ease-out;
+ 
+ 
+}
+.button:hover {
+  box-shadow: 6px 6px rgba(0, 0, 0, 0.6);
+ }
+
+.modal-overlay {
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 2;
+}
+
+.modal {
+ position: fixed;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ z-index: 2;
+ 
+ width: 100%;
+ max-width: 400px;
+ background-color: #FFF;
+ border-radius: 16px;
+ 
+ padding: 25px;
+}
+ 
+ h1.title_modal {
+  color: #222;
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 15px;
+ }
+ 
+ p.subtitle_modal {
+  color: #666;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 15px;
+ }
+
+
+.fade-enter-active,
+.fade-leave-active {
+ transition: opacity .5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+ opacity: 0;
+}
+
+.slide-enter-active,
+.slide-leave-active {
+ transition: transform .5s;
+}
+
+.slide-enter,
+.slide-leave-to {
+ transform: translateY(-50%) translateX(100vw);
+}
 </style>
+
+<script>
+
+  export default {
+    data () {
+  return {
+   showModal: false
+  }
+ }
+  }
+</script>

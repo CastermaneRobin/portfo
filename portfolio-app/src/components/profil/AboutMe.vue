@@ -17,9 +17,8 @@
 
            
             <br>
-            
-            <div class="w3-light-grey w3-round-xlarge" >
-                <div class="w3-round-xlarge w3-center bc_color_orange" style="height:50px;  width:100%;"><p style="padding-top:11px" ><b style="font-size:19px">Télécharger mon CV</b></p></div>
+            <div class="middle">
+              <a class="buttonDownload "  href="castermane.pdf" download="castermane.pdf">Téléchargr mon CV</a>
             </div>
           
 
@@ -34,36 +33,36 @@
           <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
           <p>Javascript</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+            <div class="w3-container w3-center w3-round-xlarge bc_color_skills" style="width:90%">90%</div>
           </div>
           <p>Java</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+            <div class="w3-container w3-center w3-round-xlarge bc_color_skills" style="width:80%">
               <div class="w3-center w3-text-white">80%</div>
             </div>
           </div>
           <p>C++ / Qt</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+            <div class="w3-container w3-center w3-round-xlarge bc_color_skills" style="width:75%">75%</div>
           </div>
           <p>React js / React native</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+            <div class="w3-container w3-center w3-round-xlarge bc_color_skills" style="width:50%">50%</div>
           </div>
           <br>
 
           <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
           <p>French</p>
           <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+            <div class="w3-round-xlarge bc_color_skills" style="height:24px;width:100%"></div>
           </div>
           <p>English</p>
           <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
+            <div class="w3-round-xlarge bc_color_skills" style="height:24px;width:55%"></div>
           </div>
           <p>Dutch</p>
           <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
+            <div class="w3-round-xlarge bc_color_skills" style="height:24px;width:25%"></div>
           </div>
           <br>
         </div>
@@ -115,31 +114,31 @@ d’un mariage.</p>
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><b>Education</b></h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Bac 1 - bac 3 Technologie de l'informatique : </b> Ephec de Louvain la neuve</h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - 2021  -  <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          <h6 class="text_color_orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - 2021  -  <span class="w3-tag bc_color_orange w3-round">Current</span></h6>
           <p class="w3-opacity"> - Développement application / développement web / administration réseau / électronique.</p>
           <hr>
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Bac 1 Science informatique : </b> Université Catholique de Louvain (UCL)</h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017 - 2018</h6>
+          <h6 class="text_color_orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017 - 2018</h6>
           
           <hr>
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>CESS « sport étude » Technique de transition : </b> Cepes de Jodoigne</h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - 2017</h6>
+          <h6 class="text_color_orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - 2017</h6>
           <p class="w3-opacity"> - 7 heures de tennis/semaines + 4 heures de conditionnement physique.</p>
           <hr>
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Secondaires « Hôtellerie » Technique de transition : </b> EHPN de Namur</h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014 - 2015</h6>
+          <h6 class="text_color_orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014 - 2015</h6>
           <p class="w3-opacity"> - Pratique 2 jours/semaine (salle et cuisine).</p>
           <hr>
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Secondaires Générales : </b>Institut Saint Albert de Jodoigne</h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2011 - 2014</h6>
+          <h6 class="text_color_orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2011 - 2014</h6>
           <p class="w3-opacity"> - Étude en immersion néerlandais (dès la 3éme maternelle).</p>
           <hr>
         </div>
@@ -155,7 +154,7 @@ d’un mariage.</p>
   <!-- End Page Container -->
 </div>
 
-<footer class="w3-container w3-teal w3-center w3-margin-top">
+<footer class="w3-container bc_color_skills w3-center w3-margin-top">
   <p>Find me on social media.</p>
   <i class="fa fa-facebook-official w3-hover-opacity"><a href="https://www.facebook.com/robin.castermane" target="_blank">Facebook</a></i>
   <i class="fa fa-instagram w3-hover-opacity"><p>Email : robin@castermane.be</p></i>
@@ -199,22 +198,6 @@ d’un mariage.</p>
   color: grey;
 }
 
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-
-.button:hover {
-  background-color: #555;
-}
-
 @media screen and (max-width: 650px) {
   .column {
     width: 100%;
@@ -225,22 +208,113 @@ p.name_title{
     font-size: 26px;
     font-weight: bold;
 }
-a.download_cv_link{
-    text-decoration: none;
-    background-color: #279688;
+.bc_color_skills{
+    background-color: #00649b;
     color: white;
-    padding: 5px;
-    border-radius: 10px;
 }
 .bc_color_orange{
-  background-color: #1f6496;
+  background-color: #00649b;
 }
 .text_color_orange{
-  color: #1f6496
+  color: #00649b
 }
+
+.middle{
+  text-align: center;
+}
+.buttonDownload {
+	display: inline-block;
+	position: relative;
+	padding: 10px 25px;
+  
+	background-color: #00649b;
+	color: white;
+  
+	font-family: sans-serif;
+	text-decoration: none;
+	font-size: 0.9em;
+	text-align: center;
+	text-indent: 15px;
+  border-radius: 20px;
+  
+}
+
+.buttonDownload:hover {
+	background-color: #333;
+	color: #fff;
+  
+}
+
+.buttonDownload:before, .buttonDownload:after {
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: 17px;
+	top: 52%;
+}
+
+/* Download box shape  */
+.buttonDownload:before {
+	width: 10px;
+	height: 2px;
+	border-style: solid;
+	border-width: 0 2px 2px;
+}
+
+/* Download arrow shape */
+.buttonDownload:after {
+	width: 0;
+	height: 0;
+	margin-left: 1px;
+	margin-top: -7px;
+  
+	border-style: solid;
+	border-width: 4px 4px 0 4px;
+	border-color: transparent;
+	border-top-color: inherit;
+	
+	animation: downloadArrow 2s linear infinite;
+	animation-play-state: paused;
+}
+
+.buttonDownload:hover:before {
+  padding-left: 5px;
+	border-color: #fff;
+}
+
+.buttonDownload:hover:after {
+	border-top-color: #fff;
+	animation-play-state: running;
+}
+
+/* keyframes for the download icon anim */
+@keyframes downloadArrow {
+	/* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
+	0% {
+		margin-top: -7px;
+		opacity: 1;
+	}
+	
+	0.001% {
+		margin-top: -15px;
+		opacity: 0;
+	}
+	
+	50% {
+		opacity: 1;
+	}
+	
+	100% {
+		margin-top: 0;
+		opacity: 0;
+	}
+}
+
+
 </style>
 
 <script>
+
     export default {
       computed:{
         calculateAge: function() {
