@@ -6,34 +6,18 @@
             <div class="column">
                 
                 <div class="polaroid container_img">
-                    <a style="text-decoration:none">
+                    <a href="/portfolio/reactNative" style="text-decoration:none">
                         <img src="../../image/nodeJs.jpg" alt="Norway" style="width:100%" class="image">
                         <div class="middle">
-
-                            <div id="app">
-                                <button class="button" @click="showModal = true">
-                                Show Modal
-                                </button>
-                                <transition name="fade" appear>
-                                    <div class="modal-overlay" v-if="showModal" @click="showModal = false"></div>
-                                </transition>
-                                <transition name="slide" appear>
-                                    <div class="modal" v-if="showModal">
-                                        <h1 class="title_modal">Lorem Ipsum</h1>
-                                        <p class="subtitle_modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem provident explicabo accusamus laudantium voluptatum nobis sed nesciunt neque possimus molestiae?</p>
-                                        <button class="button" @click="showModal = false">
-                                        Close Modal
-                                        </button>
-                                    </div>
-                                </transition>
-                            </div>
-
+                            <div class="text">Formation Node Js</div>
                         </div>
                         <a class="container">
                             <p>Formation OpenClassrooms</p>
                         </a>
                     </a>
-                </div>
+                </div> 
+
+                
                 
                 <div class="polaroid container_img">
                     <a href="/portfolio/jef" style="text-decoration:none">
@@ -85,6 +69,7 @@
                
                 <div class="polaroid container_img">
                     <a href="/portfolio/reactNative" style="text-decoration:none">
+                    
                         <img src="../../image/reactNativeFormation.webp" alt="Norway" style="width:100%" class="image">
                         <div class="middle">
                             <div class="text">Formation React native</div>
@@ -98,7 +83,7 @@
                
 
                 <div class="polaroid container_img">
-                    <a href="./AttestationTutorat.pdf" download style="text-decoration:none">
+                    <a href="AttestationTutorat.pdf" style="text-decoration:none" download="AttestationTutorat.pdf">
                         <img src="../../image/tutoratEphec2.png" alt="Norway" style="width:100%" class="image">
                         <div class="middle">
                             <div class="text">Tutorat Ephec</div>

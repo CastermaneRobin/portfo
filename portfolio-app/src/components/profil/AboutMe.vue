@@ -26,7 +26,6 @@
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i><b>Age : </b> {{ calculateAge }}</p>
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i><b>Ville : </b>Marilles, Belgique</p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><b>Email : </b>robin@castermane.be</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i><b>Téléphone : </b>+32 474 03 31 97</p>
           <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i><b>Permis : </b> B ({{ calculateDrivingLicence }} ans)</p>
           <hr>
 
@@ -155,10 +154,8 @@ d’un mariage.</p>
 </div>
 
 <footer class="w3-container bc_color_skills w3-center w3-margin-top">
-  <p>Find me on social media.</p>
-  <i class="fa fa-facebook-official w3-hover-opacity"><a href="https://www.facebook.com/robin.castermane" target="_blank">Facebook</a></i>
+  <p>Find me here:</p>
   <i class="fa fa-instagram w3-hover-opacity"><p>Email : robin@castermane.be</p></i>
-  <i class="fa fa-snapchat w3-hover-opacity"><p>Phone : +32 474 03 31 97</p></i>
   <i class="fa fa-pinterest-p w3-hover-opacity"></i>
   <i class="fa fa-twitter w3-hover-opacity"></i>
   <i class="fa fa-linkedin w3-hover-opacity"></i>

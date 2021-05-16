@@ -1,25 +1,49 @@
 <template>
 <div class='mainContainer'>
-    <h3>DevDay</h3>
+    <h3 style="font-size: 40px">DevDay</h3>
+
+    <h2 style="font-size: 30px; text-align: center;  margin: 30px">Preuve : Ticket</h2>
 
 
-<div id="app">
- <button class="button" @click="showModal = true">
-  Show Modal
- </button>
- <transition name="fade" appear>
-  <div class="modal-overlay" v-if="showModal" @click="showModal = false"></div>
- </transition>
- <transition name="slide" appear>
-  <div class="modal" v-if="showModal">
-   <h1>Lorem Ipsum</h1>
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem provident explicabo accusamus laudantium voluptatum nobis sed nesciunt neque possimus molestiae?</p>
-   <button class="button" @click="showModal = false">
-    Close Modal
-   </button>
-  </div>
- </transition>
-</div>
+<div class="preuve"><img src="../../../image/devDayPicture/ticketDevDay.png"></div>
+
+    <h2 style="font-size: 30px; text-align: center; margin: 30px">Groupe : </h2>
+
+
+<div class="first_galerie galerie">
+
+        
+        
+        <div class="item"><img src="../../../image/devDayPicture/DevDayReunion.png"></div>
+        <div class="item"><img src="../../../image/devDayPicture/intro.png"></div>
+
+    </div>
+
+
+
+
+<h1>Quelques photos supplémentaires</h1>
+
+    <div class="galerie">
+
+        
+        <div class="item"><img src="../../../image/devDayPicture/AKS_APP_Gateway2.png"></div>
+        <div class="item"><img src="../../../image/devDayPicture/architectureAgile.png"></div>
+        <div class="item"><img src="../../../image/devDayPicture/dataScientists.png"></div>
+        <div class="item"><img src="../../../image/devDayPicture/dataScientists2.png"></div>
+        <div class="item"><img src="../../../image/devDayPicture/dataScientists3.png"></div>
+        <div class="item"><img src="../../../image/devDayPicture/jetpackCompose.png"></div>
+        <div class="item"><img src="../../../image/devDayPicture/MemoirPerdu.png"></div>
+        <div class="item"><img src="../../../image/devDayPicture/naturalLanguageProcessing.png"></div>
+        <div class="item"><img src="../../../image/devDayPicture/pilotDecisionManagement.png"></div>
+        <div class="item"><img src="../../../image/devDayPicture/pilotDecisionManagement2.png"></div>
+        <div class="item"><img src="../../../image/devDayPicture/pilotDecisionManagement3.png"></div>
+        <div class="item"><img src="../../../image/devDayPicture/pilotDecisionManagement4.png"></div>
+        <div class="item"><img src="../../../image/devDayPicture/storageAzure.png"></div>
+
+    </div>
+
+
 
 </div>
 
@@ -33,9 +57,9 @@ h3{
 }
 
 div.mainContainer{
-  background-color: #f2f2f2;
+  background-color: #d5d5d5;
   padding: 20px;
-  height: 100vh;
+  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -48,109 +72,49 @@ div.mainContainer{
 }
 
 
-#app {
- position: relative;
- 
- display: flex;
- justify-content: center;
- align-items: center;
- 
- width: 100vw;
- min-height: 100vh;
- overflow-x: hidden;
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.button {
- appearance: none;
- outline: none;
- border: none;
- background: none;
- cursor: pointer;
- 
- display: inline-block;
- padding: 15px 25px;
- background-image: linear-gradient(to right, #CC2E5D, #FF5858);
- border-radius: 8px;
- 
- color: #FFF;
- font-size: 18px;
- font-weight: 700;
- 
- box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
- transition: 0.4s ease-out;
- 
- &:hover {
-  box-shadow: 6px 6px rgba(0, 0, 0, 0.6);
- }
+
+h1 {
+    color: #000;
+    text-align: center;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
 }
 
-.modal-overlay {
- position: absolute;
- top: 0;
- left: 0;
- right: 0;
- bottom: 0;
- z-index: 98;
- background-color: rgba(0, 0, 0, 0.3);
+.galerie {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1300px;
+    margin: 70px auto 0;
+}
+.item {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.item img {
+    width: 100%;
+    height: auto;
+}
+.preuve{
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.preuve img{
+  width: 100%;
 }
 
-.modal {
- position: fixed;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
- z-index: 99;
- 
- width: 100%;
- max-width: 400px;
- background-color: #FFF;
- border-radius: 16px;
- 
- padding: 25px;
- 
- h1 {
-  color: #222;
-  font-size: 32px;
-  font-weight: 900;
-  margin-bottom: 15px;
- }
- 
- p {
-  color: #666;
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 15px;
- }
-}
 
-.fade-enter-active,
-.fade-leave-active {
- transition: opacity .5s;
-}
-
-.fade-enter,
-.fade-leave-to {
- opacity: 0;
-}
-
-.slide-enter-active,
-.slide-leave-active {
- transition: transform .5s;
-}
-
-.slide-enter,
-.slide-leave-to {
- transform: translateY(-50%) translateX(100vw);
-}
 </style>
 
-<script>
-
-  export default {
-    data () {
-  return {
-   showModal: false
-  }
- }
-  }
-</script>

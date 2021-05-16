@@ -1,6 +1,6 @@
 <template>
 <div class='mainContainer'>
-    <h3>Formation Node JS</h3>
+    <h3>Formation OpenClassrooms</h3>
 
 
 </div>

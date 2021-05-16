@@ -28,7 +28,7 @@
     
     <div v-bind:class="{ hiddenClass : headerIsActive }">
     <div class="centered"><p class="title1">Je suis Robin Castermane.</p></div>
-      <div class="bottom"><p class="title2">Je suis passionné de développement web, web/mobiles « responsive » et de développement applicatif.</p></div>
+      <div class="bottom"><p class="title2">Je suis passionné de programmation : développement applicatif, développement web et web/mobiles « responsive ».</p></div>
     </div>
 
   </header>
