@@ -15,6 +15,7 @@ import JefJobDay from './components/portfolio/details/JefJobDay.vue'
 
 const router = createRouter({
     history: createWebHistory(),
+    baseUrl: 'https://castermanerobin.github.io/portfolio',
     routes: [
         { path: '/', component: MonProfil},
         { path: '/portfolio', component: Portfolio2},
