@@ -8,7 +8,9 @@
             <div class="column w3-animate-left">
                 
                 <div class="polaroid container_img">
-                    <a href="/portfolio/travaux/reactNative" style="text-decoration:none">
+                    <router-link to='/portfolio/travaux/reactNative' style="text-decoration:none">
+                    
+                    
                         <img src="../../image/nodeJs.jpg" alt="Norway" style="width:100%" class="image">
                         <div class="middle">
                             <div class="text">Formation Node Js</div>
@@ -16,13 +18,13 @@
                         <a class="container">
                             <p>Formation OpenClassrooms</p>
                         </a>
-                    </a>
+                    </router-link>
                 </div> 
 
                 
                 
                 <div class="polaroid container_img">
-                    <a href="/portfolio/travaux/jef" style="text-decoration:none">
+                    <router-link to='/portfolio/travaux/jef' style="text-decoration:none">
                         <img src="../../image/jefJobDay.png" alt="Norway" style="width:100%" class="image">
                         <div class="middle">
                             <div class="text">Job day JEF</div>
@@ -30,11 +32,11 @@
                         <a class="container">
                             <p>Visite d'entreprise</p>
                         </a>
-                    </a>
+                    </router-link>
                 </div> 
 
                 <div class="polaroid container_img">
-                    <a style="text-decoration:none" href="/portfolio/travaux/linux">
+                   <router-link to='/portfolio/travaux/linux' style="text-decoration:none">
                         <img src="../../image/GithubForm.png" alt="Norway" style="width:100%" class="image">
                         <div class="middle">
                             <div class="text">Formation GitHub</div>
@@ -43,12 +45,12 @@
                         <a class="container">
                             <p>Formation à l'UCL</p>
                         </a>
-                    </a>
+                    </router-link>
                 </div> 
 
                 
                 <div class="polaroid container_img">
-                    <a href="/portfolio/travaux/devDay" style="text-decoration:none">
+                    <router-link to='/portfolio/travaux/devDay' style="text-decoration:none">
                         <img src="../../image/DevDayy.png" alt="Norway" style="width:100%" class="image">
                         <div class="middle">
                             <div class="text">DevDay 2020</div>
@@ -56,7 +58,7 @@
                         <a class="container">
                             <p>DevDay 2020</p>
                         </a>
-                    </a>
+                    </router-link>
                 </div> 
             
 
@@ -70,7 +72,7 @@
             <div class="column w3-animate-right">
                
                 <div class="polaroid container_img">
-                    <a href="/portfolio/travaux/reactNative" style="text-decoration:none">
+                    <router-link to='/portfolio/travaux/reactNative' style="text-decoration:none">
                     
                         <img src="../../image/reactNativeFormation.webp" alt="Norway" style="width:100%" class="image">
                         <div class="middle">
@@ -79,7 +81,7 @@
                         <a class="container">
                             <p>Formation OpenClassrooms</p>
                         </a>
-                    </a>
+                    </router-link>
                 </div> 
 
                
@@ -98,7 +100,7 @@
                 </div> 
                 
                 <div class="polaroid container_img">
-                    <a style="text-decoration:none" href="/portfolio/travaux/linux">
+                    <router-link to='/portfolio/travaux/linux' style="text-decoration:none">
                         <img src="../../image/LinuxForm.png" alt="Norway" style="width:100%" class="image">
                         <div class="middle">
                             <div class="text">Formation Linux</div>
@@ -106,11 +108,11 @@
                         <a class="container">
                             <p>Formation à l'UCL</p>
                         </a>
-                    </a>
+                    </router-link>
                 </div>
                 
                 <div class="polaroid container_img">
-                    <a style="text-decoration:none" href="/portfolio/travaux/linux">
+                    <router-link to='/portfolio/travaux/linux' style="text-decoration:none">
                         <img src="../../image/LinuxForma2.jpg" alt="Norway" style="width:100%" class="image">
                         <div class="middle">
                             <div class="text">Formation Linux</div>
@@ -118,7 +120,7 @@
                         <a class="container">
                             <p>Formation à l'UCL</p>
                         </a>
-                    </a>
+                    </router-link>
                 </div> 
                 
             </div>

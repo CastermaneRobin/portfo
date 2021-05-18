@@ -63,7 +63,14 @@ methods: {
 created () {
   window.addEventListener('scroll', this.handleScroll);
   
-  //console.log(this.$route)
+        
+        
+      
+  console.log(this.$route);
+  if(this.$route.path === '/portfolio' || this.$route.path === '/'){
+        console.log('REUSSI')
+        this.headerIsActive = false;
+      }
 },
 
 unmounted () {
