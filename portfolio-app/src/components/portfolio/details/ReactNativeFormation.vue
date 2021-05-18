@@ -6,7 +6,7 @@
 
     
     <div class="table_info">
-    <div ><p class="subtitle_infos">Voici toutes les formations que j'ai suivi sur open OpenClassrooms :</p></div>
+    <div ><p class="subtitle_infos">Voici toutes les formations que j'ai suivies sur open OpenClassrooms :</p></div>
   
   <ul class="w3-ul w3-card-4">
     <li class="w3-bar">

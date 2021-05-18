@@ -6,7 +6,7 @@
 
     
     <div class="table_info">
-    <div ><p class="subtitle_infos">Voici toutes les entreprise que j'ai suivi durant cette journée :</p></div>
+    <div ><p class="subtitle_infos">Voici toutes les entreprises que j'ai suivies durant cette journée :</p></div>
   
   <ul class="w3-ul w3-card-4 maxWidth">
     <li class="w3-bar">
@@ -49,7 +49,7 @@
 
 
 <div class="table_info">
-    <div ><p class="subtitle_infos">Voici tout(es) les passerelles / Master que j'ai suivi durant cette journée :</p></div>
+    <div ><p class="subtitle_infos">Voici tout(e)s les passerelles / Master que j'ai suivi(e)s durant cette journée :</p></div>
   
   <ul class="w3-ul w3-card-4 maxWidth">
     <li class="w3-bar">
