@@ -1,6 +1,54 @@
 <template>
-<div class='mainContainer'>
-    <h3 class="tilte_formation">Formation OpenClassrooms : Node Js et React Native</h3>
+<div class='mainContainer w3-animate-zoom'>
+  
+  
+    <h3 class="tilte_formation">Formation OpenClassrooms</h3>
+
+    
+    <div class="table_info">
+    <div ><p class="subtitle_infos">Voici toutes les formations que j'ai suivi sur open OpenClassrooms :</p></div>
+  
+  <ul class="w3-ul w3-card-4">
+    <li class="w3-bar">
+      
+      <img src="../../../image/nodeLogo.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Node Js</span><br>
+        <span>10 heures</span>
+      </div>
+    </li>
+
+    <li class="w3-bar">
+      
+      <img src="../../../image/reactLogo.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">React Native</span><br>
+        <span>30 heures</span>
+      </div>
+    </li>
+
+    <li class="w3-bar">
+     
+      <img src="../../../image/cLogo.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Programamtion en C</span><br>
+        <span>4 heures</span>
+      </div>
+    </li>
+
+
+    <li class="w3-bar">
+     
+      <img src="../../../image/OpenClassroomLogo.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Et plein d'autres formations</span><br>
+        <span>xx heures</span>
+      </div>
+    </li>
+
+
+  </ul>
+</div>
 
 
 
@@ -41,11 +89,21 @@ div.mainContainer{
 }
 @media(max-width: 650px){
   h3{
-    padding-top: 50px;
+    padding-top: 50px; 
+  }
+}
+@media(min-width: 650px){
+  h3{
+    font-size: 36px;
+  }
+  .subtitle_infos{
+    font-size: 24px;
   }
 }
 h3.tilte_formation{
   margin-bottom: 30px;
+    font-family: 'Times New Roman', serif;
+
 }
 div.container_img{
   max-width: 800px;
@@ -54,5 +112,12 @@ div.container_img{
   margin-right: auto;
   margin-bottom: 20px;
 }
-
+div.table_info{
+  padding-bottom: 50px;
+  
+}
+.subtitle_infos{
+      font-family: 'Times New Roman', serif;
+    text-align: center;
+}
 </style>

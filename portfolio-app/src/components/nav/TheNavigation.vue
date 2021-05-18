@@ -13,10 +13,10 @@
       <div class="menu">
         <ul @click="displayBurger" v-bind:class="{ menu: toggleBurger }">
           <li>
-            <router-link to='/'>Mon profil</router-link>
+            <router-link to='/portfolio'>Mon profil</router-link>
           </li>
           <li>
-            <router-link to='/portfolio'>Portfolio</router-link>
+            <router-link to='/portfolio/travaux'>Portfolio</router-link>
           </li>
           <li>
             <router-link to='/contact'>Contact</router-link>
@@ -73,11 +73,11 @@ unmounted () {
 watch: {
     $route(){
       window.scrollTo(0, 0);
-      if(this.$route.path === '/portfolio'){
+      if(this.$route.path === '/portfolio/travaux'){
         this.headerIsActive = true
       }else if(this.$route.path === '/contact'){
         this.headerIsActive = true
-      }else if(this.$route.path === '/'){
+      }else if(this.$route.path === '/portfolio'){
         this.headerIsActive = false
         
       }
@@ -181,11 +181,13 @@ nav ul li a{
   font-weight: bold;
   font-size: 26px;
 }
+
 nav.scroll ul {
   background: #040127;
   box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
-  height: 77px;
 }
+
+
 img {
   width: 60px;
 }

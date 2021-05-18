@@ -18,7 +18,9 @@
            
             <br>
             <div class="middle">
-              <a class="buttonDownload "  href="castermane.pdf" download="castermane.pdf">Téléchargr mon CV</a>
+              <a class="buttonDownload "  href='CASTERMANE_Robin_CV.pdf' download="">Téléchargr mon CV</a>
+
+
             </div>
           
 
@@ -155,8 +157,11 @@ d’un mariage.</p>
 
 <footer class="w3-container bc_color_skills w3-center w3-margin-top">
   <p>Find me here:</p>
-  <i class="fa fa-instagram w3-hover-opacity"><p>Email : robin@castermane.be</p></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"><p><b>Email : robin@castermane.be</b></p></i>
+  <div class="citation">
+  <i class="fa fa-pinterest-p w3-hover-opacity ">La persévérance est la clé de la réussite, pour avancer et apprendre ne nous contentons
+pas de ce que nous attendons au départ car bien souvent de belles opportunités
+s’offriront à vous.</i></div>
   <i class="fa fa-twitter w3-hover-opacity"></i>
   <i class="fa fa-linkedin w3-hover-opacity"></i>
   
@@ -164,7 +169,12 @@ d’un mariage.</p>
 </template>
 
 <style scoped>    
-
+.citation{
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 15px;
+}
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -311,7 +321,6 @@ p.name_title{
 </style>
 
 <script>
-
     export default {
       computed:{
         calculateAge: function() {

@@ -1,12 +1,14 @@
 <template>
-    <section>
+    <section >
+        <div class="w3-animate-top">
             <h1 class='mainTitle'>Mon Portfolio</h1>
             <h2 class="subtitle">Voici tous mes travaux réalisés pendant mon cursus à l'Ephec qui m'ont permis d'acquérir des expériences professionnelles supplémentaires</h2>
+        </div>
         <div class="row">
-            <div class="column">
+            <div class="column w3-animate-left">
                 
                 <div class="polaroid container_img">
-                    <a href="/portfolio/reactNative" style="text-decoration:none">
+                    <a href="/portfolio/travaux/reactNative" style="text-decoration:none">
                         <img src="../../image/nodeJs.jpg" alt="Norway" style="width:100%" class="image">
                         <div class="middle">
                             <div class="text">Formation Node Js</div>
@@ -20,7 +22,7 @@
                 
                 
                 <div class="polaroid container_img">
-                    <a href="/portfolio/jef" style="text-decoration:none">
+                    <a href="/portfolio/travaux/jef" style="text-decoration:none">
                         <img src="../../image/jefJobDay.png" alt="Norway" style="width:100%" class="image">
                         <div class="middle">
                             <div class="text">Job day JEF</div>
@@ -32,7 +34,7 @@
                 </div> 
 
                 <div class="polaroid container_img">
-                    <a style="text-decoration:none">
+                    <a style="text-decoration:none" href="/portfolio/travaux/linux">
                         <img src="../../image/GithubForm.png" alt="Norway" style="width:100%" class="image">
                         <div class="middle">
                             <div class="text">Formation GitHub</div>
@@ -46,7 +48,7 @@
 
                 
                 <div class="polaroid container_img">
-                    <a href="/portfolio/devDay" style="text-decoration:none">
+                    <a href="/portfolio/travaux/devDay" style="text-decoration:none">
                         <img src="../../image/DevDayy.png" alt="Norway" style="width:100%" class="image">
                         <div class="middle">
                             <div class="text">DevDay 2020</div>
@@ -65,10 +67,10 @@
 
             </div>
 
-            <div class="column">
+            <div class="column w3-animate-right">
                
                 <div class="polaroid container_img">
-                    <a href="/portfolio/reactNative" style="text-decoration:none">
+                    <a href="/portfolio/travaux/reactNative" style="text-decoration:none">
                     
                         <img src="../../image/reactNativeFormation.webp" alt="Norway" style="width:100%" class="image">
                         <div class="middle">
@@ -96,7 +98,7 @@
                 </div> 
                 
                 <div class="polaroid container_img">
-                    <a style="text-decoration:none">
+                    <a style="text-decoration:none" href="/portfolio/travaux/linux">
                         <img src="../../image/LinuxForm.png" alt="Norway" style="width:100%" class="image">
                         <div class="middle">
                             <div class="text">Formation Linux</div>
@@ -108,7 +110,7 @@
                 </div>
                 
                 <div class="polaroid container_img">
-                    <a style="text-decoration:none">
+                    <a style="text-decoration:none" href="/portfolio/travaux/linux">
                         <img src="../../image/LinuxForma2.jpg" alt="Norway" style="width:100%" class="image">
                         <div class="middle">
                             <div class="text">Formation Linux</div>
@@ -187,6 +189,15 @@
 
 
     </section>
+
+    <footer class="w3-container bc_color_skills w3-center ">
+  <p>Find me here:</p>
+  <i class="fa fa-instagram w3-hover-opacity"><p>Email : robin@castermane.be</p></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  
+</footer>
 </template>
 
 <style scoped>
@@ -485,6 +496,11 @@ h2.subtitle{
 .slide-enter,
 .slide-leave-to {
  transform: translateY(-50%) translateX(100vw);
+}
+
+.bc_color_skills{
+    background-color: #00649b;
+    color: white;
 }
 </style>
 

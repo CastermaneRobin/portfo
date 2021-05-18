@@ -1,9 +1,9 @@
 <template>
-<div class='mainContainer'>
+<div class='mainContainer w3-animate-bottom'>
     <h3>Contactez-moi</h3>
 
 <div class='containerForm'>
-  <form action="/">
+  <form action="/portfolio">
     <label for="fname">Nom</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
