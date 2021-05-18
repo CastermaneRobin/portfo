@@ -6,7 +6,7 @@
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
   <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-center">
+  <div class="mySlides w3-display-container w3-center w3-animate-top">
     <img src="https://ced.uit.ac.ma/wp-content/uploads/2020/02/ENSAK-e1581075158575.png" style="width:65%">
 
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
@@ -16,7 +16,7 @@
   
 
   <!-- The Band Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+  <div class="w3-container w3-content w3-center w3-padding-64 w3-animate-bottom" style="max-width:800px" id="band">
     <h2 class="w3-wide">DEV DAY 2020</h2>
     <p class="w3-opacity"><i>Programmation</i></p>
     <p class="w3-justify">Mes camarades de classes et moi-même  avons participé au Dev Day 2020 en distanciel, voici quelques photos prise durant cette journée. Nous avons essayé de tous participer un maximum à chaque activité mêmes si celle-ci était durant les heures de cours. Vous pouvez observer ci-dessous la photo de groupe avec qui nous avons organisé cette journée (Michel Victoire, Brochet Louis, Cotton Victor et Vandervelden Igor).</p>
