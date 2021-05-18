@@ -23,15 +23,15 @@
     <div class="w3-row w3-padding-32">
       <div class="w3-third">
         <p><b>Photo de groupe</b></p>
-        <img src="../../../image/devDayPicture/DevDayReunion.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:90%">
+        <img src="../../../image/devDayPicture/DevDayReunion.png" class="w3-round w3-margin-bottom blackBorder" alt="Random Name" style="width:90%">
       </div>
       <div class="w3-third">
         <p><b>Ticket d'entré</b></p>
-        <img src="../../../image/devDayPicture/ticketDevDay.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:90%">
+        <img src="../../../image/devDayPicture/ticketDevDay.png" class="w3-round w3-margin-bottom blackBorder" alt="Random Name" style="width:90%">
       </div>
       <div class="w3-third">
         <p><b>Introduction</b></p>
-        <img src="../../../image/devDayPicture/intro.png" class="w3-round" alt="Random Name" style="width:90%">
+        <img src="../../../image/devDayPicture/intro.png" class="w3-round blackBorder" alt="Random Name" style="width:90%">
       </div>
     </div>
   </div>
@@ -47,7 +47,7 @@
       <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
         <div class="w3-third w3-margin-bottom" >
           <div style="text-align:center">
-                      <img src="../../../image/devDayPicture/jetpackCompose.png" alt="New York" style="width:90%;" class="w3-hover-opacity">
+                      <img src="../../../image/devDayPicture/jetpackCompose.png" alt="New York" style="width:90%;" class="w3-hover-opacity whiteBorder">
 
           </div>
           <div class="w3-container w3-white">
@@ -58,7 +58,7 @@
         
 
       <div class="w3-third w3-margin-bottom">
-          <img src="../../../image/devDayPicture/architectureAgile.png" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <img src="../../../image/devDayPicture/architectureAgile.png" alt="New York" style="width:100%" class="w3-hover-opacity whiteBorder">
           <div class="w3-container w3-white">
             <p><b>Refactorer vers une architecture agile</b></p>
             <p class="w3-opacity">Thomas Thiry</p>
@@ -66,7 +66,7 @@
         </div>
 
         <div class="w3-third w3-margin-bottom">
-          <img src="../../../image/devDayPicture/AKS_APP_Gateway.png" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <img src="../../../image/devDayPicture/AKS_APP_Gateway.png" alt="New York" style="width:100%" class="w3-hover-opacity whiteBorder">
           <div class="w3-container w3-white">
             <p><b>AKS et App Gateway: le combo idéal</b></p>
             <p class="w3-opacity">Florent Appointaire</p>
@@ -76,7 +76,7 @@
         
 
         <div class="w3-third w3-margin-bottom">
-          <img src="../../../image/devDayPicture/MemoirPerdu.png" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <img src="../../../image/devDayPicture/MemoirPerdu.png" alt="New York" style="width:100%" class="w3-hover-opacity whiteBorder">
           <div class="w3-container w3-white">
             <p><b>A la recherche de la mémoire perdue</b></p>
             <p class="w3-opacity">Christophe Nasarre</p>
@@ -84,7 +84,7 @@
         </div>
 
         <div class="w3-third w3-margin-bottom">
-          <img src="../../../image/devDayPicture/naturalLanguageProcessing.png" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <img src="../../../image/devDayPicture/naturalLanguageProcessing.png" alt="New York" style="width:100%" class="w3-hover-opacity whiteBorder">
           <div class="w3-container w3-white">
             <p><b>Natural Language Processing</b></p>
             <p class="w3-opacity">Silvia Quarteroni</p>
@@ -92,7 +92,7 @@
         </div>
 
         <div class="w3-third w3-margin-bottom">
-          <img src="../../../image/devDayPicture/dataScientists.png" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <img src="../../../image/devDayPicture/dataScientists.png" alt="New York" style="width:100%" class="w3-hover-opacity whiteBorder">
           <div class="w3-container w3-white">
             <p><b>Les data scientists sont partis ... comment je déploie leurs travaux en production?</b></p>
             <p class="w3-opacity">Cédric Charlier</p>
@@ -100,7 +100,7 @@
         </div>
 
         <div class="w3-third w3-margin-bottom">
-          <img src="../../../image/devDayPicture/pilotDecisionManagement.png" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <img src="../../../image/devDayPicture/pilotDecisionManagement.png" alt="New York" style="width:100%" class="w3-hover-opacity whiteBorder">
           <div class="w3-container w3-white">
             <p><b>Pilot Decision Management</b></p>
             <p class="w3-opacity">Clifford Agius</p>
@@ -110,7 +110,7 @@
         
 
         <div class="w3-third w3-margin-bottom">
-          <img src="../../../image/devDayPicture/pilotDecisionManagement4.png" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <img src="../../../image/devDayPicture/pilotDecisionManagement4.png" alt="New York" style="width:100%" class="w3-hover-opacity whiteBorder">
           <div class="w3-container w3-white">
             <p><b>Pilot Decision Management</b></p>
             <p class="w3-opacity">Clifford Agius</p>
@@ -118,7 +118,7 @@
         </div>
 
         <div class="w3-third w3-margin-bottom">
-          <img src="../../../image/devDayPicture/storageAzure.png" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <img src="../../../image/devDayPicture/storageAzure.png" alt="New York" style="width:100%" class="w3-hover-opacity whiteBorder">
           <div class="w3-container w3-white">
             <p><b>Tout tout tout, vous saurez tout sur les Storages Azure</b></p>
             <p class="w3-opacity">Arnaud Maichac et Philippe Didiergoerges</p>
@@ -135,14 +135,6 @@
 <!-- End Page Content -->
 </div>
 
-<footer class="w3-container bc_color_skills w3-center ">
-  <p>Find me here:</p>
-  <i class="fa fa-instagram w3-hover-opacity"><p>Email : robin@castermane.be</p></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  
-</footer>
 
 
 </div>
@@ -170,5 +162,12 @@ div.mainContainer{
 .bc_color_skills{
     background-color: #00649b;
     color: white;
+}
+img.blackBorder{
+  border: 3px solid #555;
+    border-radius: 0px;
+}
+img.whiteBorder{
+  border: 3px solid #fff;
 }
 </style>

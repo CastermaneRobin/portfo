@@ -43,15 +43,7 @@
   </div>
 </div>
 
-<!-- Footer -->
-<footer class="w3-container bc_color_skills w3-center w3-margin-top">
-  <p>Find me here:</p>
-  <i class="fa fa-instagram w3-hover-opacity"><p>Email : robin@castermane.be</p></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  
-</footer>
+
 
 
 

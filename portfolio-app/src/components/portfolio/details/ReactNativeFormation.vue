@@ -59,8 +59,6 @@
                           <img src="../../../image/preuveOpenClassroom/tableauDeBordBis.png" alt="Norway" style="width:100%" class="image">  
                   </div>  
 
-<hr style="height:2px;border-width:0;color:gray;background-color:gray; max-width:1000px; margin-left: auto;
-  margin-right: auto;">
 
                   <div class=" container_img">
                           <img src="../../../image/preuveOpenClassroom/taleauDeBord.png" alt="Norway" style="width:100%" class="image">
@@ -81,7 +79,6 @@ h3{
 div.mainContainer{
   background-color: #f2f2f2;
   padding: 20px;
-  height: 100vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -119,5 +116,8 @@ div.table_info{
 .subtitle_infos{
       font-family: 'Times New Roman', serif;
     text-align: center;
+}
+img.image{
+    border: 3px solid #888;
 }
 </style>

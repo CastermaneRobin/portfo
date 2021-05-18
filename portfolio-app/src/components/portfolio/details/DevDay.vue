@@ -98,7 +98,6 @@ h3{
 div.mainContainer{
   background-color: #f2f2f2;
   padding: 20px;
-  height: 100vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
